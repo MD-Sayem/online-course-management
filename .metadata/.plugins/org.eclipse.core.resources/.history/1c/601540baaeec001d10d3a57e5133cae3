@@ -1,0 +1,88 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.io.BufferedReader" %>
+<%@ page import="java.io.InputStreamReader" %> 
+<%@page import="java.util.ArrayList"%>
+<%@page import="cse.web.Student"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
+<%@page import= "java.sql.PreparedStatement"%>
+<%@page import="java.sql.*"%>
+<%Student std = (Student)request.getAttribute("data"); %>
+<% ArrayList<String> courseId = (ArrayList<String>)request.getAttribute("courseId"); %>
+<% ArrayList<String> courseName = (ArrayList<String>)request.getAttribute("courseName"); %>
+<% ArrayList<String> courseCredit = (ArrayList<String>)request.getAttribute("courseCredit"); %>
+<% ArrayList<String> courseTeacher = (ArrayList<String>)request.getAttribute("courseTeacher");  int i=0;%>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Course Registration</title>
+	<link rel="stylesheet" type="text/css" href="./public/admin.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<h1>Admin</h1>
+      <h1> <center>Online Course Registration</center></h1>
+			<a href="logout">Logout</a>
+		</nav>
+	</header>
+
+	<main>
+		<form>
+			
+			<h2>Add Course</h2>
+			<table class="css-serial">
+				<thead>
+					<tr>
+						<th>Sl </th>
+						<th>Course ID</th>
+						<th>Course Name</th>
+						<th>Credit</th>
+						<th>Teacher's Name</th>
+					</tr>
+				</thead>
+        
+				<tbody>
+				<% for(i=0; i<2; i++){ %>
+					<tr>
+
+						<td></td>
+						<td><%= courseId.get(i) %></td>
+						<td>courseName.get(i)</td>
+						<td>courseCredit.get(i)</td>
+						<td>courseTeacher.get(i)</td>
+					</tr>
+				<%} %>
+					
+					<tr >
+						<td> </td>
+						<td><input type="text" name="course-id" style="font-size:17px;"></td>
+						<td><input type="text" name="course-name" style="font-size:17px;"></td>
+						<td><input type="text" name="course-credit" style="font-size:17px;"></td>
+				 <!-- 		<td><input type="text" name="teacher-name"></td>  -->
+						<td>
+					<!-- 	    <label for="classes">Assign a Course Teacher:</label>  -->
+						<!-- 	<div class="custom-select" > -->
+				                    <select name="language" id="language" style="width:200px; height:30px; font-size:17px;">
+									  <option value="javascript" disabled>MSN</option>
+									  <option value="python">MSR</option>
+									  <option value="c++">MRS</option>
+									  <option value="java" selected>MSC</option>
+									</select>
+						<!-- 	</div> -->
+
+                    	</td>
+					</tr>
+          
+          
+				</tbody>
+			</table>
+			<button type="submit" name="add-now">Add Now</button>
+		</form>
+	</main>
+</body>
+</html>

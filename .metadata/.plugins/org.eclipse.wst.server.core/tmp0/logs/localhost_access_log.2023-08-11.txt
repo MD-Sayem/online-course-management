@@ -1,0 +1,9 @@
+127.0.0.1 - - [11/Aug/2023:20:23:01 +0600] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [11/Aug/2023:20:24:00 +0600] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [11/Aug/2023:20:24:00 +0600] "GET /favicon.ico HTTP/1.1" 404 762
+127.0.0.1 - - [11/Aug/2023:20:24:05 +0600] "GET /online-course-management/ HTTP/1.1" 200 4707
+127.0.0.1 - - [11/Aug/2023:20:24:05 +0600] "GET /online-course-management/vendor/jquery/jquery.min.css HTTP/1.1" 404 816
+127.0.0.1 - - [11/Aug/2023:20:24:05 +0600] "GET /online-course-management/alert/dist/sweetalert.css HTTP/1.1" 404 813
+127.0.0.1 - - [11/Aug/2023:20:24:05 +0600] "GET /online-course-management/public/home.css HTTP/1.1" 200 2503
+127.0.0.1 - - [11/Aug/2023:20:24:05 +0600] "GET /online-course-management/public/Images/online-course.jpg HTTP/1.1" 200 95787
+127.0.0.1 - - [11/Aug/2023:20:24:06 +0600] "GET /online-course-management/alert/dist/sweetalert.css HTTP/1.1" 404 813

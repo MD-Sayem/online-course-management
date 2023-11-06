@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.jee.server:webtec-project" serverId="Apache Tomcat v9.0  at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:webProject" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:FormData" serverId="Apache Tomcat v9.0  at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:HelloWorldServlet" serverId="Apache Tomcat v9.0  at localhost (2)"/>
+  <module moduleId="org.eclipse.jst.jee.server:online-course-management" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:JSPServletExample" serverId="Tomcat v9.0 Server at localhost (2)"/>
+</modules>
